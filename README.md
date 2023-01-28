@@ -17,6 +17,7 @@
 
 _This application is being put in place to help others decide what languages they should learn in order to acheive their desired job. They will take a short test and recieve their results back.
 https://github.com/TheEPICturkey/LangSelec.git
+https://theepictukey.github.io/LangSelec/
 
 ## Setup/Installation Requirements
 
