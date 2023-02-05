@@ -1,77 +1,116 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <link rel="stylesheet" text="text/css" href="css/styles.css">
+  <title>Coding Language Test</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Programming Language Suggester</title>
 </head>
-<body>
-  <h1>Welcome to Coding language suggester!</h1>
-  <form id="formOne">
-    <label for="nameInput">What is your name?</label>
-    <input id="nameInput" type="text" name="nameInput">
+<div class="innerbody"
+  <body>
+    <p>Coding is a very fun and challenging field to go into. Developers come from many different walks of life wether that be self taught, bootcamps, or college. One thing that helps when you start this adventure is knowing which languages to start learning. There are many different languages, so take this test to see which ones would benefit you most!</p>
 
-  <p>What color would you pick?</p>
-    <label for="questionOne">
-    <select id="questionOne">
-      <option>Red</option>
-      <option>Light Red</option>
-      <option>Dark Red</option>
-      <option>Extra Red</option>    
-    </select>
-    </label>
+      <h1>Discover the <strong>best</strong> coding language to learn with this test! Select which answer excites you most!</h1>
+      <form id="Test">
+        <label for="Q1"><strong>What kind of company do you want to work in?</strong></label>
+          <br>
+        <label>
+          <input type="radio" name="Q1" value="1">
+          I would feel more comfortable in a small company!
+        <br>
+        <label>
+          <input type="radio" name="Q1" value="2">
+          I am going to be self employed!
+        </label>
+          <br>
+        <label>
+          <input type="radio" name="Q1" value="3">
+          I prefer to work for a big company!
+        </label>
 
-  <p>On a scale from 1-10 how familiar are you with coding?</p>
-    <label for="questionTwo">
-      <input id="questionTwo" type="number"></input>
-    </label>
+        <br>
 
-  <p>Why do you want to learn to code?</p>
-    <label for="questionThree">
-    <select id="questionThree">
-      <option>Be a professional Coder</option>
-      <option>Start your own site</option>
-      <option>Help others</option>
-      <option>Computers cool</option>
-    </select>
-    </label>
+        <label for="Q2"><strong>What kind of enviroment do you want to work in?</strong></label>
+          <br>
+        <label>
+          <input type="radio" name="Q2" value="1">
+          Office.
+          <br>
+        <label>
+          <input type="radio" name="Q2" value="2">
+          Travel.
+          <br>
+        <label>
+          <input type="radio" name="Q2" value="3">
+          Home.
+        </label>
+    
+          <br>
 
-  <p>Big Buisness or Private Buisness</p>
-    <label for="quesitonFour">
-    <select id="questionFour">
-      <option>XXXL</option>
-      <option>XL</option>
-      <option>L</option>
-      <option>SM</option>
-    </select>
-    </label>
+        <label for="Q3"><strong>What do you want to work with?</strong></label>
+          <br>
+        <label>
+          <input type="radio" name="Q3" value="1">
+          Back-End developing.
+          <br>
+        <label>
+          <input type="radio" name="Q3" value="2">
+          Front-End developing.
+          <br>
+        <label>
+          <input type="radio" name="Q3" value="3">
+          Game development!
+        </label>
 
+          <br>
+  
+        <label for="Q4"><strong>What is your experience with coding?</strong></label>
+          <br>
+        <label>
+          <input type="radio" name="Q4" value="1">
+          Little to none.
+          <br>
+        <label>
+          <input type="radio" name="Q4" value="2">
+          Comfortable to little.
+          <br>
+        <label>
+          <input type="radio" name="Q4" value="3">
+          Expert to comfortable.
+        </label>
+    
+          <br>
 
-    <p>How many siblings do you have?</p>
-      <label for="questionFive"></label>
-      <input id="questionFive" type="number">
+        <label for="Q5"><strong>Do you want to teach you developer skills to new developers?</strong></label>
+          <br>
+        <label>
+          <input type="radio" name="Q5" value="1">
+          Yes, I yearn to pass on my knowledge.
+          <br>
+        <label>
+          <input type="radio" name="Q5" value="2">
+          I will help if asked but I dont seek to teach.
+          <br>
+        <label>
+          <input type="radio" name="Q5" value="3">
+          Teaching is not my style.
+        </label>
+
+          <br>
+          <br>
+    
+        <button type="submit" class="btn">Go!</button>
+          <br>
+        <button type="reset" class="btn">Reset Test!</button>
+      </form>
+  </body>
+    <h2>Results</h2>
+    <p id="output"></p>
+
       <br>
       <br>
-      <button type="submit">Choose your language!</button>
-  </form>
-<div id="outcome" class="hidden">
-  <h1>Thank you <span id="name1a">_</span> for filling out our questionaire.</h1>
-  <p>Just to double check! Your answer to question one was "<strong><span id="question1a">_</span></strong>", your answer to question two was "<strong><span id="question2a">_</span></strong>", your answer to question three was "<strong><span id="question3a">_</span></strong>", your answer to question four was "<strong><span id="question4a">_</span></strong>"
-  and lastly your answer to question five was "<strong><span id="question5a">_</span></strong>". 
-  <br>
-  <br>
-  <strong id="incorrect">If these are not the correct answers to your question please click this button to reset the form!</strong>
-  <button type="button" class="hidden" id="reset">reset</button>
-  </p> 
-  <h1>The outcome we've selected for you is:</h1>
-  <div id="cSharp" class="hidden">C#</div>
-  <div id="java" class="hidden">Javascript</div>
-  <div id="ruby" class="hidden">Ruby</div>
+      <br>
+      <br>
+      <div id="one" class="hidden">
 </div>
-</div>
-<div id="error-message" class="hidden">PLEASE FILL OUT FORMS CORRECTLY FOR RIGHT OUTCOME</div>
-
-
-
 </body>
 </html>

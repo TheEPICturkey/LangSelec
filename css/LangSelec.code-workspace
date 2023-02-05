@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../programlangsuggester/.vscode"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LangSelec"
+	}
+}
