@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
   const form = document.getElementById("Test");
   form.addEventListener("submit", function(event) { 
     event.preventDefault();
+    console.log("hello")
     const answer1 = document.querySelector("input[type=radio][name=Q1]:checked").value;
     const answer2 = document.querySelector("input[type=radio][name=Q2]:checked").value;
     const answer3 = document.querySelector("input[type=radio][name=Q3]:checked").value;
@@ -23,7 +24,7 @@ window.addEventListener("load", function() {
     } else {
       result = "You should look into java script! Check out Epicodus for a great coding school! JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well."
   }
-
+console.log("hello");
   document.getElementById("output").innerText = result;
   });
 });
